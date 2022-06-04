@@ -1,0 +1,46 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "tsx": true
+    },
+
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "parser": "@babel/eslint-parser",
+
+  "plugins": ["react", "sort-imports-es6-autofix"],
+  "rules": {
+    "comma-dangle": 0,
+    "react/jsx-uses-vars": 1,
+    "no-unused-vars": "warn",
+    "no-console": 1,
+    "no-unexpected-multiline": "warn",
+    "react/no-unescaped-entities": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "react-hooks/rules-of-hooks": "off",
+    "react/display-name": [0, { "ignoreTranspilerName": false }],
+    "@next/next/no-img-element": "off",
+    "@next/next/no-document-import-in-page": "off",
+    "@next/next/no-page-custom-font": "off",
+    "sort-imports-es6-autofix/sort-imports-es6": [
+      2,
+      {
+        "ignoreCase": false,
+        "ignoreMemberSort": false,
+
+        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
+      }
+    ]
+  }
+}
