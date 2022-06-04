@@ -8,6 +8,7 @@ module.exports = {
   },
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
@@ -16,6 +17,8 @@ module.exports = {
       ...defaultTheme.screens,
     },
     colors: {
+      ...defaultTheme.colors,
+      text: "#1F2626",
       background: {
         light: "#FAFAFA",
         dark: "#041F31",

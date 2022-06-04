@@ -1,33 +1,23 @@
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
 import React from "react";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 
 export default function Navbar() {
-  const [navbarOpen, setNavbarOpen] = React.useState(false);
-  const [topScroll] = React.useState(true);
-
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" className="bg-[#fff]">
-        <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
+      <AppBar position="static" className="bg-background-light text-text">
+        <Toolbar className="px-40">
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            News
+            Aldi
           </Typography>
-          <Button color="inherit">Login</Button>
+          <div className="flex items-center justify-center gap-2">
+            <Button color="inherit">Project</Button>
+
+            <Button color="inherit">Contact</Button>
+          </div>
         </Toolbar>
       </AppBar>
     </Box>
