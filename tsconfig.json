@@ -16,6 +16,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "paths": {
+      "@libs": ["libs"],
+      "@assets": ["assets"],
+      "@components": ["./src/components"],
+      "@utils": ["utils"],
+      "@store": ["store"],
       "@libs/*": ["libs/*"],
       "@assets/*": ["assets/*"],
       "@components/*": ["./src/components/*"],
