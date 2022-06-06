@@ -1,8 +1,9 @@
 /* eslint-disable no-unused-vars */
 import * as React from "react";
-import { Chip, TextField, Typography } from "@mui/material";
+import { Avatar, Chip, IconButton, TextField, Typography } from "@mui/material";
 
 import { CODECLAZZ, MICROGEN, STATS } from "assets/project";
+import { CONTACT, PROJECT, SKILLS } from "assets/navigation";
 import { ContactForm, Intro, Skills } from "components/molecules";
 import { GITHUB, GMAIL, LINKEDIN } from "assets/connect";
 import {
@@ -12,6 +13,7 @@ import {
 } from "keen-slider/react";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
+import DeleteIcon from "@mui/icons-material/Delete";
 import Navbar from "components/atoms/nav-bar";
 
 function ThumbnailPlugin(
@@ -142,13 +144,44 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <div className="w-full h-full bg-background-light max-w-screen-2xl mx-auto">
+      <div className="w-full h-full bg-background-light max-w-screen-2xl mx-auto relative">
         {/* <Navbar /> */}
+        <nav className="fixed top-10 left-10 flex flex-col items-center justify-center gap-4">
+          <IconButton aria-label="delete" size="large">
+            <a href="#intro">
+              <Avatar className="bg-background-dark">AK</Avatar>
+            </a>
+          </IconButton>
+          <IconButton aria-label="delete" size="large">
+            <a href="#skills">
+              <Avatar>
+                <SKILLS />
+              </Avatar>
+            </a>
+          </IconButton>
+          <IconButton aria-label="delete" size="large">
+            <a href="#project">
+              <Avatar>
+                <PROJECT />
+              </Avatar>
+            </a>
+          </IconButton>
+          <IconButton aria-label="delete" size="large">
+            <a href="#contact">
+              <Avatar>
+                <CONTACT />
+              </Avatar>
+            </a>
+          </IconButton>
+        </nav>
         <main className="lg:px-60 mobile:px-6 sm:px-12 w-full space-y-16">
           <Intro />
 
           <Skills />
-          <section className="w-full mobile:h-full sm:h-full flex items-start justify-start flex-col">
+          <section
+            id="project"
+            className="w-full mobile:h-full sm:h-full flex items-start justify-start flex-col"
+          >
             <Typography className="my-8 font-bold" variant="h5">
               Project
             </Typography>

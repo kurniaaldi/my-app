@@ -12,6 +12,7 @@ function Intro() {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <Grid
+      id="intro"
       container
       spacing={isMobile ? 1 : 2}
       direction={isMobile ? "column" : "row"}

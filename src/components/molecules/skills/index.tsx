@@ -97,7 +97,10 @@ function Skills() {
     },
   ];
   return (
-    <section className="w-full mobile:h-full sm:h-full flex items-start justify-start flex-col gap-4">
+    <section
+      id="skills"
+      className="w-full mobile:h-full sm:h-full flex items-start justify-start flex-col gap-4"
+    >
       <Typography className="my-8 font-bold" variant="h5">
         Skill
       </Typography>

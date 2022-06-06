@@ -3,7 +3,10 @@ import React from "react";
 
 function ContactMe() {
   return (
-    <section className="w-full mobile:h-full sm:h-full flex items-start justify-start flex-col">
+    <section
+      id="contact"
+      className="w-full mobile:h-full sm:h-full flex items-start justify-start flex-col"
+    >
       <Typography className="my-8 font-bold" variant="h5">
         Contact Me
       </Typography>
