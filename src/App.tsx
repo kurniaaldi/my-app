@@ -1,10 +1,10 @@
 /* eslint-disable no-unused-vars */
 import * as React from "react";
-import { Chip, Typography } from "@mui/material";
+import { Chip, TextField, Typography } from "@mui/material";
 
 import { CODECLAZZ, MICROGEN, STATS } from "assets/project";
+import { ContactForm, Intro, Skills } from "components/molecules";
 import { GITHUB, GMAIL, LINKEDIN } from "assets/connect";
-import { Intro, Skills } from "components/molecules";
 import {
   KeenSliderInstance,
   KeenSliderPlugin,
@@ -144,7 +144,7 @@ function App() {
       <CssBaseline />
       <div className="w-full h-full bg-background-light max-w-screen-2xl mx-auto">
         {/* <Navbar /> */}
-        <main className="lg:px-60 mobile:px-6 sm:px-12 w-full space-y-10">
+        <main className="lg:px-60 mobile:px-6 sm:px-12 w-full space-y-16">
           <Intro />
 
           <Skills />
@@ -209,6 +209,7 @@ function App() {
               </div>
             </div>
           </section>
+          <ContactForm />
         </main>
         <footer className="w-full h-full min-h-[10rem] flex items-center justify-center flex-col gap-4">
           <Typography className="font-bold text-primary" variant="h5">
