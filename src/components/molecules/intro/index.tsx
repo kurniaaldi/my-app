@@ -1,10 +1,24 @@
-import { Button, Grid, Typography } from "@mui/material";
+import {
+  Button,
+  Grid,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import React from "react";
 
 function Intro() {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
-    <Grid container spacing={2} alignItems="center" className="h-screen">
-      <Grid item xs={1} md={6} className="w-full h-full">
+    <Grid
+      container
+      spacing={isMobile ? 1 : 2}
+      direction={isMobile ? "column" : "row"}
+      alignItems="center"
+      className="mobile:h-full sm:h-full lg:min-h-[45rem]"
+    >
+      <Grid item xs={1} sm={6} className="w-full h-full">
         <div className="w-full h-full flex items-start justify-center flex-col gap-4">
           <Typography className="font-semibold" variant="h5">
             Developer
@@ -23,9 +37,13 @@ function Intro() {
           </Button>
         </div>
       </Grid>
-      <Grid item xs={1} md={6}>
-        <figure>
-          <img src="./images/profile.png" alt="my-profile.png" />
+      <Grid item xs={1} sm={6}>
+        <figure className="w-full m-0">
+          <img
+            src="./images/profile.png"
+            alt="my-profile.png"
+            className="w-[inherit]"
+          />
         </figure>
       </Grid>
     </Grid>
