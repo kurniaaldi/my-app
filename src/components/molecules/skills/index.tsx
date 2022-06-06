@@ -97,7 +97,7 @@ function Skills() {
     },
   ];
   return (
-    <div className="w-full mobile:h-full sm:h-full flex items-start justify-start flex-col gap-4">
+    <section className="w-full mobile:h-full sm:h-full flex items-start justify-start flex-col gap-4">
       <Typography className="my-8 font-bold" variant="h5">
         Skill
       </Typography>
@@ -116,7 +116,7 @@ function Skills() {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 }
 

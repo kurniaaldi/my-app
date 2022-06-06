@@ -148,7 +148,7 @@ function App() {
           <Intro />
 
           <Skills />
-          <div className="w-full mobile:h-full sm:h-full flex items-start justify-start flex-col">
+          <section className="w-full mobile:h-full sm:h-full flex items-start justify-start flex-col">
             <Typography className="my-8 font-bold" variant="h5">
               Project
             </Typography>
@@ -208,7 +208,7 @@ function App() {
                 })}
               </div>
             </div>
-          </div>
+          </section>
         </main>
         <footer className="w-full h-full min-h-[10rem] flex items-center justify-center flex-col gap-4">
           <Typography className="font-bold text-primary" variant="h5">
