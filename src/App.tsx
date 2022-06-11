@@ -91,6 +91,7 @@ function App() {
       title: "Stats.enablr.id",
       thumb: <STATS className="w-24 h-24 mobile:h-auto mobile:w-10" />,
       desc: "Stats adalah tools riset pemasaran yang membantu Anda menganalisa pasar, kompetisi dan trend produk untuk memaksimalkan aktivitas penjualan online di marketplace terbesar di Indonesia.",
+      link: "https://stats.enablr.id/",
       stack: ["Next.Js", "Axios", "Tailwind", "formik", "etc."],
     },
     {
@@ -103,6 +104,7 @@ function App() {
         />
       ),
       desc: "62Trade.com is ready to take important role to connect market from all around the world. We will take you to experience a simple way of importing and exporting your products. If you are thinking of selling and buying products, our platform can be a media to present the products that might suitable for your needs.",
+      link: "https://62trade.com/",
       stack: ["Next.Js", "Axios", "Scss", "formik", "etc."],
     },
     {
@@ -110,6 +112,7 @@ function App() {
       title: "Codeclazz.com",
       thumb: <CODECLAZZ className="w-20 h-20 mobile:h-auto mobile:w-10" />,
       desc: "Platform Belajar Coding secara Hands On.",
+      link: "https://codeclazz.com/",
       stack: ["Next.Js", "Axios", "Apollo Graphql", "Material UI", "etc."],
     },
     {
@@ -117,6 +120,7 @@ function App() {
       title: "Codeclazz Mobile",
       thumb: <CODECLAZZ className="w-20 h-20 mobile:h-auto mobile:w-10" />,
       desc: "Platform Belajar Coding secara Hands On.",
+      link: "https://play.google.com/store/apps/details?id=com.codeclazz",
       stack: [
         "React Native",
         "Apollo Graphql",
@@ -130,6 +134,7 @@ function App() {
       title: "Microgen.com",
       thumb: <MICROGEN className="w-28 h-28 mobile:h-auto mobile:w-10" />,
       desc: "Low Code Microservices Backend. Create Scalable App Faster!.",
+      link: "https://microgen.id/",
       stack: ["Next.Js", "Axios", "Apollo Graphql", "Material UI", "etc."],
     },
   ];
@@ -299,6 +304,18 @@ function App() {
                           <Typography className="text-text" paragraph>
                             {item.desc}
                           </Typography>
+                          <Button
+                            variant="outlined"
+                            endIcon={<ArrowRightAltIcon />}
+                          >
+                            <a
+                              href={item.link}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              Kunjungi
+                            </a>
+                          </Button>
                         </div>
                       </div>
                     </div>
