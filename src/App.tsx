@@ -1,10 +1,18 @@
 /* eslint-disable no-unused-vars */
 import * as React from "react";
-import { Avatar, Chip, IconButton, TextField, Typography } from "@mui/material";
+import {
+  Avatar,
+  Button,
+  Chip,
+  IconButton,
+  TextField,
+  Typography,
+} from "@mui/material";
 
 import { CODECLAZZ, MICROGEN, STATS } from "assets/project";
 import { CONTACT, PROJECT, SKILLS } from "assets/navigation";
 import { ContactForm, Intro, Skills } from "components/molecules";
+import { DUMBWAYS } from "assets/project/dumbways";
 import { GITHUB, GMAIL, LINKEDIN } from "assets/connect";
 import {
   KeenSliderInstance,
@@ -12,9 +20,8 @@ import {
   useKeenSlider,
 } from "keen-slider/react";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import CssBaseline from "@mui/material/CssBaseline";
-import DeleteIcon from "@mui/icons-material/Delete";
-import Navbar from "components/atoms/nav-bar";
 
 function ThumbnailPlugin(
   mainRef: React.MutableRefObject<KeenSliderInstance | null>,
@@ -176,7 +183,74 @@ function App() {
         </nav>
         <main className="lg:px-60 mobile:px-6 sm:px-12 w-full space-y-16">
           <Intro />
+          <section className="w-full mobile:h-full sm:h-full flex items-start justify-start flex-col space-y-4">
+            <div className="flex items-center justify-center w-full">
+              <Typography variant="h3">Sekarang Sibuk Apa?</Typography>
+            </div>
+            <div>
+              <img src="./enablr.svg" alt="enablr.id" />
+            </div>
+            <Typography variant="h4">
+              Menjadi Seorang Frontend Developer
+            </Typography>
 
+            <Typography>
+              Menjadi sebuah hal yang patut dibanggakan pada tahun 2021 bisa
+              bergabung bersama Enablr.id, serta ikut berkontribusi dan tumbuh
+              berkembang dengan perusahaan yang sedang berkembang dengan cepat.
+              aku disini berperang sebagai seorang frontend developer yang mana
+              tugasnya mengembangkan tampilan visual atau user interface pada
+              halaman website
+            </Typography>
+            <Button variant="outlined" endIcon={<ArrowRightAltIcon />}>
+              <a href="https://enablr.id/" target="_blank" rel="noreferrer">
+                Kunjungi
+              </a>
+            </Button>
+          </section>
+          <section className="w-full mobile:h-full sm:h-full flex items-start justify-start flex-col space-y-8">
+            <div className="flex items-center justify-center w-full">
+              <Typography variant="h3">Sebelumnya Ngapain?</Typography>
+            </div>
+            <div className="space-y-4">
+              <div>
+                <img src="./mejik.jpg" alt="enablr.id" />
+              </div>
+              <Typography variant="h4">
+                Menjadi Seorang Fullstack Developer
+              </Typography>
+              <Typography>
+                Pada tahun pertama saya menjadi seorang developer, bergabung
+                dengan perusahaan yang mengembangkan aplikasi tools developer
+                menjadi pengalaman berharga untuk didapatkan. berperan sebagai
+                fullstack developer dalam mengembangan tools developer seperti
+                microgen.id membuat saya mendapatkan banyak pengalaman menjadi
+                seorang developer.
+              </Typography>
+              <Button variant="outlined" endIcon={<ArrowRightAltIcon />}>
+                <a href="https://microgen.id/" target="_blank" rel="noreferrer">
+                  Kunjungi
+                </a>
+              </Button>
+            </div>
+            <div className="space-y-4">
+              <DUMBWAYS className="text-[10rem]" />
+              <Typography variant="h4">
+                Menjadi Seorang Fullstack Developer
+              </Typography>
+              <Typography>
+                Saya bergabung dengan Dumbways menjadi awal mula penjalanan saya
+                sebagai fullstack developer. berawal mengikuti kegiatan bootcamp
+                hingga bergabung dan membantu mengembangkan website dumbway.id
+              </Typography>
+
+              <Button variant="outlined" endIcon={<ArrowRightAltIcon />}>
+                <a href="https://dumbways.id/" target="_blank" rel="noreferrer">
+                  Kunjungi
+                </a>
+              </Button>
+            </div>
+          </section>
           <Skills />
           <section
             id="project"
