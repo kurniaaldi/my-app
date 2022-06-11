@@ -1,0 +1,33 @@
+{
+  "profile": "Saya seorang pengembang frontend dengan hasrat yang kuat untuk mempelajari hal-hal baru. Saya akrab dengan ReactJs, React Native, Node.Js dan ExpressJs. Saya mulai belajar bahasa pemrograman dari php dan saat ini menggunakan javascript sebagai bahasa utama saya.",
+  "iDoNow": {
+    "title": "Sekarang Sibuk Apa?",
+    "child": [
+      {
+        "button": "Kunjungin",
+        "link": "https://enablr.id/",
+        "role": "Menjadi Seorang Frontend Developer",
+        "desc": "Menjadi sebuah hal yang patut dibanggakan pada tahun 2021 bisa bergabung bersama Enablr.id, serta ikut berkontribusi dan tumbuh berkembang dengan perusahaan yang sedang berkembang dengan cepat. aku disini berperang sebagai seorang frontend developer yang mana tugasnya mengembangkan tampilan visual atau user interface pada halaman website."
+      }
+    ]
+  },
+  "before": {
+    "title": "Sebelumnya Ngapain?",
+    "child": [
+      {
+        "button": "Kunjungin",
+        "link": "https://microgen.id/",
+        "role": "Menjadi Seorang Fullstack Developer",
+        "desc": "Pada tahun pertama saya menjadi seorang developer, bergabung dengan perusahaan yang mengembangkan aplikasi tools developer menjadi pengalaman berharga untuk didapatkan. berperan sebagai fullstack developer dalam mengembangan tools developer seperti microgen.id membuat saya mendapatkan banyak pengalaman menjadi seorang developer."
+      },
+      {
+        "button": "Kunjungin",
+        "link": "https://dumbways.id/",
+        "role": "Menjadi Seorang Fullstack Developer",
+        "desc": "Saya bergabung dengan Dumbways menjadi awal mula penjalanan saya sebagai fullstack developer. berawal mengikuti kegiatan bootcamp hingga bergabung dan membantu mengembangkan website dumbway.id."
+      }
+    ]
+  },
+  "project": "Hal yang menjadi fokus dari saya adalah memiliki aplikasi sendiri yang nantinya akan saya kelola sendiri. saya juga sudah telah menyelesaikan beberapa perkerjaan dari luar dan berbagai jenis skala pekerjaan, mulai dari mengerjakan beberapa fitur saja sampai dengan membuat full satu product utuh dari awal sampai selesai.",
+  "hubungi": "Hubungi Saya"
+}

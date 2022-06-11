@@ -22,6 +22,7 @@ import {
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import CssBaseline from "@mui/material/CssBaseline";
+import id from "constan/id.json";
 
 function ThumbnailPlugin(
   mainRef: React.MutableRefObject<KeenSliderInstance | null>,
@@ -135,7 +136,7 @@ function App() {
 
   const connect = [
     {
-      link: "aldikurniawan1606@gmail.com",
+      link: "mailto:aldikurniawan1606@gmail.com",
       component: <GMAIL className="w-10 h-auto" />,
     },
     {
@@ -185,71 +186,73 @@ function App() {
           <Intro />
           <section className="w-full mobile:h-full sm:h-full flex items-start justify-start flex-col space-y-4">
             <div className="flex items-center justify-center w-full">
-              <Typography variant="h3">Sekarang Sibuk Apa?</Typography>
+              <Typography variant="h3">{id.iDoNow.title}</Typography>
             </div>
-            <div>
-              <img src="./enablr.svg" alt="enablr.id" />
-            </div>
-            <Typography variant="h4">
-              Menjadi Seorang Frontend Developer
-            </Typography>
+            {id.iDoNow.child.map((item: any) => {
+              return (
+                <>
+                  <div>
+                    <img src="./enablr.svg" alt="enablr.id" />
+                  </div>
+                  <Typography variant="h4">{item.role}</Typography>
 
-            <Typography>
-              Menjadi sebuah hal yang patut dibanggakan pada tahun 2021 bisa
-              bergabung bersama Enablr.id, serta ikut berkontribusi dan tumbuh
-              berkembang dengan perusahaan yang sedang berkembang dengan cepat.
-              aku disini berperang sebagai seorang frontend developer yang mana
-              tugasnya mengembangkan tampilan visual atau user interface pada
-              halaman website
-            </Typography>
-            <Button variant="outlined" endIcon={<ArrowRightAltIcon />}>
-              <a href="https://enablr.id/" target="_blank" rel="noreferrer">
-                Kunjungi
-              </a>
-            </Button>
+                  <Typography>{item.desc}</Typography>
+                  <Button variant="outlined" endIcon={<ArrowRightAltIcon />}>
+                    <a href={item.link} target="_blank" rel="noreferrer">
+                      {item.button}
+                    </a>
+                  </Button>
+                </>
+              );
+            })}
           </section>
           <section className="w-full mobile:h-full sm:h-full flex items-start justify-start flex-col space-y-8">
             <div className="flex items-center justify-center w-full">
-              <Typography variant="h3">Sebelumnya Ngapain?</Typography>
+              <Typography variant="h3">{id.before.title}</Typography>
             </div>
-            <div className="space-y-4">
-              <div>
-                <img src="./mejik.jpg" alt="enablr.id" />
-              </div>
-              <Typography variant="h4">
-                Menjadi Seorang Fullstack Developer
-              </Typography>
-              <Typography>
-                Pada tahun pertama saya menjadi seorang developer, bergabung
-                dengan perusahaan yang mengembangkan aplikasi tools developer
-                menjadi pengalaman berharga untuk didapatkan. berperan sebagai
-                fullstack developer dalam mengembangan tools developer seperti
-                microgen.id membuat saya mendapatkan banyak pengalaman menjadi
-                seorang developer.
-              </Typography>
-              <Button variant="outlined" endIcon={<ArrowRightAltIcon />}>
-                <a href="https://microgen.id/" target="_blank" rel="noreferrer">
-                  Kunjungi
-                </a>
-              </Button>
-            </div>
-            <div className="space-y-4">
-              <DUMBWAYS className="text-[10rem]" />
-              <Typography variant="h4">
-                Menjadi Seorang Fullstack Developer
-              </Typography>
-              <Typography>
-                Saya bergabung dengan Dumbways menjadi awal mula penjalanan saya
-                sebagai fullstack developer. berawal mengikuti kegiatan bootcamp
-                hingga bergabung dan membantu mengembangkan website dumbway.id
-              </Typography>
+            {id.before.child.map((item: any, index: number) => {
+              if (index === 0) {
+                return (
+                  <div key={index} className="space-y-4">
+                    <div>
+                      <img src="./mejik.jpg" alt="enablr.id" />
+                    </div>
+                    <Typography variant="h4">{item.title}</Typography>
+                    <Typography>{item.desc}</Typography>
+                    <Button variant="outlined" endIcon={<ArrowRightAltIcon />}>
+                      <a href={item.link} target="_blank" rel="noreferrer">
+                        {item.button}
+                      </a>
+                    </Button>
+                  </div>
+                );
+              } else {
+                return (
+                  <div key={index} className="space-y-4">
+                    <DUMBWAYS className="text-[10rem]" />
+                    <Typography variant="h4">
+                      Menjadi Seorang Fullstack Developer
+                    </Typography>
+                    <Typography>
+                      Saya bergabung dengan Dumbways menjadi awal mula
+                      penjalanan saya sebagai fullstack developer. berawal
+                      mengikuti kegiatan bootcamp hingga bergabung dan membantu
+                      mengembangkan website dumbway.id
+                    </Typography>
 
-              <Button variant="outlined" endIcon={<ArrowRightAltIcon />}>
-                <a href="https://dumbways.id/" target="_blank" rel="noreferrer">
-                  Kunjungi
-                </a>
-              </Button>
-            </div>
+                    <Button variant="outlined" endIcon={<ArrowRightAltIcon />}>
+                      <a
+                        href="https://dumbways.id/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {item.button}
+                      </a>
+                    </Button>
+                  </div>
+                );
+              }
+            })}
           </section>
           <Skills />
           <section
@@ -259,13 +262,7 @@ function App() {
             <Typography className="my-8 font-bold" variant="h5">
               Project
             </Typography>
-            <Typography className="mb-8">
-              Hal yang menjadi fokus dari saya adalah memiliki aplikasi sendiri
-              yang nantinya akan saya kelola sendiri. saya juga sudah telah
-              menyelesaikan beberapa perkerjaan dari luar dan berbagai jenis
-              skala pekerjaan, mulai dari mengerjakan beberapa fitur saja sampai
-              dengan membuat full satu product utuh dari awal sampai selesai.
-            </Typography>
+            <Typography className="mb-8">{id.project}</Typography>
             <div className="w-full">
               <div ref={sliderRef} className="keen-slider">
                 {project.map((item: any, index) => {
@@ -323,7 +320,7 @@ function App() {
               </div>
             </div>
           </section>
-          <ContactForm />
+          {/* <ContactForm /> */}
         </main>
         <footer className="w-full h-full min-h-[10rem] flex items-center justify-center flex-col gap-4">
           <Typography className="font-bold text-primary" variant="h5">
