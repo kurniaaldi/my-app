@@ -1,0 +1,33 @@
+{
+  "profile": "I am a frontend developer with strong passion to learn new things. I am familiar with ReactJs, React Native, Node.Js and ExpressJs. I’m starting to learn programming language from php and currently use javascript as my main language.",
+  "iDoNow": {
+    "title": "Currennt Job?",
+    "child": [
+      {
+        "button": "Visit",
+        "link": "https://enablr.id/",
+        "role": "Frontend Developer",
+        "desc": "It will be something to be proud of in 2021 to be able to join Enablr.id, and contribute and grow with a company that is developing rapidly. I am here fighting as a frontend developer whose job is to develop a visual appearance or user interface on web pages."
+      }
+    ]
+  },
+  "before": {
+    "title": "Last Job?",
+    "child": [
+      {
+        "button": "Visit",
+        "link": "https://microgen.id/",
+        "role": "Fullstack Developer",
+        "desc": "In my first year as a developer, joining a company that develops developer tools applications is a valuable experience to gain. acting as a fullstack developer in developing developer tools such as microgen.id made me gain a lot of experience as a developer."
+      },
+      {
+        "button": "Visit",
+        "link": "https://dumbways.id/",
+        "role": "Fullstack Developer",
+        "desc": "I joined Dumbways to be the beginning of my journey as a fullstack developer. starting from participating in bootcamp activities to joining and helping develop the dumbway.id website."
+      }
+    ]
+  },
+  "project": "The thing that is my focus is having my own application which I will later manage myself. I have also completed several external works and various types of work scales, ranging from working on just a few features to making a full product from start to finish.",
+  "hubungi": "Connect To Me"
+}
