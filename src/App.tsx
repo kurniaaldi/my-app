@@ -259,6 +259,13 @@ function App() {
             <Typography className="my-8 font-bold" variant="h5">
               Project
             </Typography>
+            <Typography className="mb-8">
+              Hal yang menjadi fokus dari saya adalah memiliki aplikasi sendiri
+              yang nantinya akan saya kelola sendiri. saya juga sudah telah
+              menyelesaikan beberapa perkerjaan dari luar dan berbagai jenis
+              skala pekerjaan, mulai dari mengerjakan beberapa fitur saja sampai
+              dengan membuat full satu product utuh dari awal sampai selesai.
+            </Typography>
             <div className="w-full">
               <div ref={sliderRef} className="keen-slider">
                 {project.map((item: any, index) => {
