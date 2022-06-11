@@ -6,6 +6,7 @@ import {
   useTheme,
 } from "@mui/material";
 import React from "react";
+import id from "constan/id.json";
 
 function Intro() {
   const theme = useTheme();
@@ -27,14 +28,11 @@ function Intro() {
           <Typography className="text-primary font-bold" variant="h3">
             Aldi Kurniawan
           </Typography>
-          <Typography paragraph>
-            I am a frontend developer with strong passion to learn new things. I
-            am familiar with ReactJs, React Native, Node.Js and ExpressJs. I’m
-            starting to learn programming language from php and currently use
-            javascript as my main language.
-          </Typography>
+          <Typography paragraph>{id.profile}</Typography>
           <Button color="primary" variant="contained" className="normal-case">
-            Contact Me
+            <a href="#contact" className="text-[white]">
+              {id.hubungi}
+            </a>
           </Button>
         </div>
       </Grid>

@@ -159,7 +159,7 @@ function App() {
       <CssBaseline />
       <div className="w-full h-full bg-background-light max-w-screen-2xl mx-auto relative">
         {/* <Navbar /> */}
-        <nav className="fixed top-10 left-10 flex flex-col items-center justify-center gap-4">
+        {/* <nav className="fixed top-10 left-10 flex flex-col items-center justify-center gap-4">
           <IconButton aria-label="delete" size="large">
             <a href="#intro">
               <Avatar className="bg-background-dark">AK</Avatar>
@@ -186,7 +186,7 @@ function App() {
               </Avatar>
             </a>
           </IconButton>
-        </nav>
+        </nav> */}
         <main className="lg:px-60 mobile:px-6 sm:px-12 w-full space-y-16">
           <Intro />
           <section className="w-full mobile:h-full sm:h-full flex items-start justify-start flex-col space-y-4">
@@ -339,7 +339,10 @@ function App() {
           </section>
           {/* <ContactForm /> */}
         </main>
-        <footer className="w-full h-full min-h-[10rem] flex items-center justify-center flex-col gap-4">
+        <footer
+          id="contact"
+          className="w-full h-full min-h-[10rem] flex items-center justify-center flex-col gap-4"
+        >
           <Typography className="font-bold text-primary" variant="h5">
             Connect To Me
           </Typography>
