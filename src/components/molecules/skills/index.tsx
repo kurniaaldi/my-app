@@ -1,6 +1,7 @@
 import {
   EXPRESS,
   GIT,
+  GOLANG,
   GRAPHQL,
   JAVASCRIPT,
   JEST,
@@ -33,6 +34,25 @@ function Skills() {
       ),
     },
     {
+      id: 13,
+      name: "GoLang",
+      component: (
+        <GOLANG className="w-40 h-40 mobile:w-16 mobile:h-auto filter-gray" />
+      ),
+    },
+    {
+      id: 14,
+      name: "Dart",
+      component: (
+        <img
+          alt="dart"
+          src="./images/dart.png"
+          className="w-40 h-40 mobile:w-16 mobile:h-auto filter-gray object-contain"
+        />
+      ),
+    },
+
+    {
       id: 11,
       name: "Node Js",
       component: (
@@ -58,6 +78,17 @@ function Skills() {
       name: "React Native",
       component: (
         <REACT_NATIVE className="w-40 h-40 mobile:w-16 mobile:h-auto filter-gray" />
+      ),
+    },
+    {
+      id: 26,
+      name: "Flutter",
+      component: (
+        <img
+          src="./images/flutter.png"
+          alt="flutter"
+          className="w-40 h-40 mobile:w-16 mobile:h-auto filter-gray object-contain"
+        />
       ),
     },
     {
