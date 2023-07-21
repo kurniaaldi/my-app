@@ -5,9 +5,10 @@
     "child": [
       {
         "button": "Kunjungin",
-        "link": "https://enablr.id/",
-        "role": "Menjadi Seorang Frontend Developer",
-        "desc": "Menjadi sebuah hal yang patut dibanggakan pada tahun 2021 bisa bergabung bersama Enablr.id, serta ikut berkontribusi dan tumbuh berkembang dengan perusahaan yang sedang berkembang dengan cepat. aku disini berperang sebagai seorang frontend developer yang mana tugasnya mengembangkan tampilan visual atau user interface pada halaman website."
+        "img": "./paramatech.jpeg",
+        "link": "https://paramatech.id/",
+        "role": "Menjadi Seorang Software Engineer",
+        "desc": "Menjadi Seorang Software Engineer memberikan tantangan baru buat saya, membuat saya lebih disiplin, teliti dan terstruktur dalam bekerja, menganalisa sebuah sistem yang akan saya kerjaan sebelum membuat codingan agar program yang saya buat lebih efisien."
       }
     ]
   },
@@ -16,12 +17,21 @@
     "child": [
       {
         "button": "Kunjungin",
+        "img": "./enablr.svg",
+        "link": "https://enablr.id/",
+        "role": "Menjadi Seorang Frontend Developer",
+        "desc": "Menjadi sebuah hal yang patut dibanggakan pada tahun 2021 bisa bergabung bersama Enablr.id, serta ikut berkontribusi dan tumbuh berkembang dengan perusahaan yang sedang berkembang dengan cepat. aku disini berperang sebagai seorang frontend developer yang mana tugasnya mengembangkan tampilan visual atau user interface pada halaman website."
+      },
+      {
+        "button": "Kunjungin",
         "link": "https://microgen.id/",
+        "img": "./mejik.jpg",
         "role": "Menjadi Seorang Fullstack Developer",
         "desc": "Pada tahun pertama saya menjadi seorang developer, bergabung dengan perusahaan yang mengembangkan aplikasi tools developer menjadi pengalaman berharga untuk didapatkan. berperan sebagai fullstack developer dalam mengembangan tools developer seperti microgen.id membuat saya mendapatkan banyak pengalaman menjadi seorang developer."
       },
       {
         "button": "Kunjungin",
+        "img": "./dumbways.svg",
         "link": "https://dumbways.id/",
         "role": "Menjadi Seorang Fullstack Developer",
         "desc": "Saya bergabung dengan Dumbways menjadi awal mula penjalanan saya sebagai fullstack developer. berawal mengikuti kegiatan bootcamp hingga bergabung dan membantu mengembangkan website dumbway.id."

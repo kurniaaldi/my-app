@@ -197,7 +197,7 @@ function App() {
               return (
                 <>
                   <div>
-                    <img src="./enablr.svg" alt="enablr.id" />
+                    <img src={item.img} alt="enablr.id" className="w-40 h-40" />
                   </div>
                   <Typography variant="h4">{item.role}</Typography>
 
@@ -216,47 +216,21 @@ function App() {
               <Typography variant="h3">{id.before.title}</Typography>
             </div>
             {id.before.child.map((item: any, index: number) => {
-              if (index === 0) {
-                return (
-                  <div key={index} className="space-y-4">
-                    <div>
-                      <img src="./mejik.jpg" alt="enablr.id" />
-                    </div>
-                    <Typography variant="h4">{item.title}</Typography>
-                    <Typography>{item.desc}</Typography>
-                    <Button variant="outlined" endIcon={<ArrowRightAltIcon />}>
-                      <a href={item.link} target="_blank" rel="noreferrer">
-                        {item.button}
-                      </a>
-                    </Button>
+              return (
+                <div key={index} className="space-y-4">
+                  <div>
+                    <img src={item.img} alt="enablr.id" className="w-40 h-40" />
                   </div>
-                );
-              } else {
-                return (
-                  <div key={index} className="space-y-4">
-                    <DUMBWAYS className="text-[10rem]" />
-                    <Typography variant="h4">
-                      Menjadi Seorang Fullstack Developer
-                    </Typography>
-                    <Typography>
-                      Saya bergabung dengan Dumbways menjadi awal mula
-                      penjalanan saya sebagai fullstack developer. berawal
-                      mengikuti kegiatan bootcamp hingga bergabung dan membantu
-                      mengembangkan website dumbway.id
-                    </Typography>
-
-                    <Button variant="outlined" endIcon={<ArrowRightAltIcon />}>
-                      <a
-                        href="https://dumbways.id/"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        {item.button}
-                      </a>
-                    </Button>
-                  </div>
-                );
-              }
+                  <Typography variant="h4">{item.role}</Typography>
+                  <Typography variant="h4">{item.title}</Typography>
+                  <Typography>{item.desc}</Typography>
+                  <Button variant="outlined" endIcon={<ArrowRightAltIcon />}>
+                    <a href={item.link} target="_blank" rel="noreferrer">
+                      {item.button}
+                    </a>
+                  </Button>
+                </div>
+              );
             })}
           </section>
           <Skills />
