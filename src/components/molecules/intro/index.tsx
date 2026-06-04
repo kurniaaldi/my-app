@@ -19,16 +19,20 @@ function Intro({ isDarkMode }: IntroProps) {
       direction={isMobile ? "column-reverse" : "row"}
       alignItems="center"
       className="py-16 md:py-24 min-h-[80vh] flex items-center"
+      style={{ fontFamily: "'Outfit', sans-serif" }}
     >
       {/* Left side: Typography & CTA */}
       <Grid item xs={12} md={6} className="w-full">
         <div className="w-full flex items-start justify-center flex-col gap-6 text-left relative z-10">
           {/* Subtle colored tag */}
-          <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-full border border-solid font-semibold text-xs tracking-wider uppercase mb-2 ${
-            isDarkMode 
-              ? "bg-purple-500/10 border-purple-500/20 text-purple-400" 
-              : "bg-purple-100 border-purple-200 text-purple-700"
-          }`}>
+          <div 
+            className={`inline-flex items-center gap-2 px-3 py-1 rounded-full border border-solid font-semibold text-xs tracking-wider uppercase mb-2 ${
+              isDarkMode 
+                ? "bg-purple-500/10 border-purple-500/20 text-purple-400" 
+                : "bg-purple-100 border-purple-200 text-purple-700"
+            }`}
+            style={{ fontFamily: "'Outfit', sans-serif" }}
+          >
             <span className={`w-2 h-2 rounded-full animate-pulse ${
               isDarkMode ? "bg-purple-400" : "bg-purple-600"
             }`}></span>
@@ -40,6 +44,7 @@ function Intro({ isDarkMode }: IntroProps) {
               isDarkMode ? "text-slate-400" : "text-slate-500"
             }`}
             variant="h6"
+            style={{ fontFamily: "'Outfit', sans-serif" }}
           >
             Frontend Developer
           </Typography>
@@ -62,6 +67,7 @@ function Intro({ isDarkMode }: IntroProps) {
               isDarkMode ? "text-slate-300" : "text-slate-600"
             }`}
             paragraph
+            style={{ fontFamily: "'Outfit', sans-serif" }}
           >
             {id.profile}
           </Typography>
@@ -72,7 +78,7 @@ function Intro({ isDarkMode }: IntroProps) {
               className={`normal-case font-bold py-3 px-8 rounded-xl bg-purple-600 hover:bg-purple-700 text-white ${
                 isDarkMode ? "btn-glow-violet" : "shadow-md hover:shadow-lg"
               } transition-all duration-300`}
-              style={{ textTransform: "none" }}
+              style={{ textTransform: "none", fontFamily: "'Outfit', sans-serif" }}
             >
               <a href="#contact" className="text-white w-full h-full flex items-center justify-center">
                 {id.hubungi}
@@ -86,7 +92,7 @@ function Intro({ isDarkMode }: IntroProps) {
                   ? "border-slate-700 hover:border-purple-400 text-slate-300 hover:text-purple-400" 
                   : "border-slate-300 hover:border-purple-500 text-slate-700 hover:text-purple-600"
               }`}
-              style={{ textTransform: "none" }}
+              style={{ textTransform: "none", fontFamily: "'Outfit', sans-serif" }}
             >
               <a href="#project" className="text-inherit w-full h-full flex items-center justify-center">
                 Lihat Proyek
@@ -120,27 +126,37 @@ function Intro({ isDarkMode }: IntroProps) {
             isDarkMode ? "bg-white/5 border-white/5" : "bg-black/5 border-black/5"
           }`} />
 
-          {/* Render generated 3D image */}
-          <figure className="w-[85%] m-0 z-10 transition-all duration-700 hover:scale-105 hover:rotate-[-2deg] cursor-pointer drop-shadow-[0_20px_50px_rgba(0,0,0,0.3)]">
+          {/* Render profile image with custom layering & blend modes to remove/play with the white background */}
+          <figure className="w-[85%] m-0 z-10 transition-all duration-700 hover:scale-105 hover:rotate-[-2deg] cursor-pointer drop-shadow-[0_20px_50px_rgba(0,0,0,0.3)] flex items-center justify-center">
             <img
-              src="./images/glass_shape.png"
-              alt="High-tech 3D Abstract Glassmorphism Shape"
-              className="w-full h-auto object-contain"
+              src="./images/profile_new.jpg"
+              alt="Aldi Kurniawan"
+              className={`w-full h-auto object-contain rounded-2xl transition-all duration-700 ${
+                isDarkMode 
+                  ? "invert mix-blend-screen opacity-90 filter drop-shadow-[0_0_25px_rgba(124,58,237,0.4)]" 
+                  : "mix-blend-multiply opacity-95"
+              }`}
             />
           </figure>
 
           {/* Floating badge 1 */}
-          <div className={`absolute top-[20%] right-[-5%] px-4 py-2 rounded-xl border border-solid backdrop-blur-md shadow-lg flex items-center gap-2 z-20 animate-[bounce_4s_ease-in-out_infinite] ${
-            isDarkMode ? "bg-slate-900/80 border-slate-800 text-slate-300" : "bg-white/80 border-slate-200 text-slate-700"
-          }`}>
+          <div 
+            className={`absolute top-[20%] right-[-5%] px-4 py-2 rounded-xl border border-solid backdrop-blur-md shadow-lg flex items-center gap-2 z-20 animate-[bounce_4s_ease-in-out_infinite] ${
+              isDarkMode ? "bg-slate-900/80 border-slate-800 text-slate-300" : "bg-white/80 border-slate-200 text-slate-700"
+            }`}
+            style={{ fontFamily: "'Outfit', sans-serif" }}
+          >
             <span className="w-2.5 h-2.5 rounded-full bg-green-500"></span>
             <span className="text-xs font-semibold">Fast UI/UX</span>
           </div>
 
           {/* Floating badge 2 */}
-          <div className={`absolute bottom-[20%] left-[-5%] px-4 py-2 rounded-xl border border-solid backdrop-blur-md shadow-lg flex items-center gap-2 z-20 animate-[bounce_5s_ease-in-out_infinite_1s] ${
-            isDarkMode ? "bg-slate-900/80 border-slate-800 text-slate-300" : "bg-white/80 border-slate-200 text-slate-700"
-          }`}>
+          <div 
+            className={`absolute bottom-[20%] left-[-5%] px-4 py-2 rounded-xl border border-solid backdrop-blur-md shadow-lg flex items-center gap-2 z-20 animate-[bounce_5s_ease-in-out_infinite_1s] ${
+              isDarkMode ? "bg-slate-900/80 border-slate-800 text-slate-300" : "bg-white/80 border-slate-200 text-slate-700"
+            }`}
+            style={{ fontFamily: "'Outfit', sans-serif" }}
+          >
             <span className="text-xs font-semibold">⚡ React & Next.js</span>
           </div>
         </div>

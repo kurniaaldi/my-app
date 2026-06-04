@@ -33,6 +33,10 @@ module.exports = {
           dark: "#0B0F19",
         },
       },
+      fontFamily: {
+        sans: ["Outfit", "sans-serif"],
+        outfit: ["Outfit", "sans-serif"],
+      },
       boxShadow: {
         glow: "0 0 15px rgba(124, 58, 237, 0.4)",
         glowBlue: "0 0 15px rgba(6, 182, 212, 0.4)",

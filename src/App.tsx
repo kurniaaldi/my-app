@@ -15,9 +15,13 @@ import { DUMBWAYS } from "assets/project/dumbways";
 import { GITHUB, GMAIL, LINKEDIN } from "assets/connect";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import CodeIcon from "@mui/icons-material/Code";
 import CssBaseline from "@mui/material/CssBaseline";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import LightModeIcon from "@mui/icons-material/LightMode";
+import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
+import SpeedIcon from "@mui/icons-material/Speed";
+import StorageIcon from "@mui/icons-material/Storage";
 import id from "constan/id.json";
 
 // Hook for scroll element visibility entrance animations
@@ -97,7 +101,13 @@ function App() {
         },
       },
       typography: {
-        fontFamily: "'Inter', sans-serif",
+        fontFamily: "'Outfit', sans-serif",
+        h1: { fontFamily: "'Outfit', sans-serif" },
+        h2: { fontFamily: "'Outfit', sans-serif" },
+        h3: { fontFamily: "'Outfit', sans-serif" },
+        h4: { fontFamily: "'Outfit', sans-serif" },
+        h5: { fontFamily: "'Outfit', sans-serif" },
+        h6: { fontFamily: "'Outfit', sans-serif" },
       },
     });
   }, [isDarkMode]);
@@ -113,22 +123,22 @@ function App() {
     {
       title: "Frontend Development",
       desc: "Visual website modern responsif & interaktif menggunakan React, Next.js, dan Tailwind CSS.",
-      icon: "💻"
+      icon: <CodeIcon className="w-5 h-5" />
     },
     {
       title: "Mobile App Development",
       desc: "Pembuatan aplikasi mobile cross-platform handal dengan React Native dan Flutter.",
-      icon: "📱"
+      icon: <PhoneIphoneIcon className="w-5 h-5" />
     },
     {
       title: "API & Backend Integration",
       desc: "Microservices backend cepat, secure, dan scalable dengan Go, Node.js, dan GraphQL.",
-      icon: "⚙️"
+      icon: <StorageIcon className="w-5 h-5" />
     },
     {
       title: "Performance & SEO",
       desc: "Optimasi performa kecepatan, aksesibilitas, skor Lighthouse, serta SEO ranking teratas.",
-      icon: "⚡"
+      icon: <SpeedIcon className="w-5 h-5" />
     }
   ];
 
@@ -230,18 +240,18 @@ function App() {
           isDarkMode ? 'border-slate-800/40 bg-[#0B0F19]/70' : 'border-slate-200/50 bg-white/70'
         }`}>
           <a href="#intro" className="flex items-center gap-2 group">
-            <span className="w-8 h-8 rounded-xl bg-purple-600 flex items-center justify-center text-white font-black text-sm tracking-tighter">
+            <span className="w-8 h-8 rounded-xl bg-purple-600 flex items-center justify-center text-white font-black text-sm tracking-tighter" style={{ fontFamily: "'Outfit', sans-serif" }}>
               AK
             </span>
             <span className={`font-extrabold text-lg tracking-tight group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors ${
               isDarkMode ? 'text-white' : 'text-slate-900'
-            }`}>
+            }`} style={{ fontFamily: "'Outfit', sans-serif" }}>
               Aldi<span className="text-purple-600">.</span>
             </span>
           </a>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-8" style={{ fontFamily: "'Outfit', sans-serif" }}>
             <a href="#intro" className={`text-sm font-semibold hover:text-purple-600 dark:hover:text-purple-400 transition-colors ${
               isDarkMode ? 'text-slate-400' : 'text-slate-600'
             }`}>Tentang</a>
@@ -278,6 +288,7 @@ function App() {
             <a 
               href="#contact" 
               className="hidden sm:inline-flex text-xs font-bold bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-xl shadow-sm hover:shadow transition-all"
+              style={{ fontFamily: "'Outfit', sans-serif" }}
             >
               Hubungi
             </a>
@@ -374,8 +385,10 @@ function App() {
                   <div className="absolute top-[-20%] right-[-20%] w-24 h-24 rounded-full bg-purple-500/5 dark:bg-purple-500/10 blur-2xl group-hover:scale-110 transition-transform duration-500" />
                   
                   <div>
-                    <div className={`text-2xl mb-4 p-2.5 rounded-xl max-w-max border border-solid ${
-                      isDarkMode ? 'bg-slate-800 border-slate-700/50' : 'bg-slate-100 border-slate-200'
+                    <div className={`mb-4 p-2.5 rounded-xl max-w-max border border-solid flex items-center justify-center ${
+                      isDarkMode 
+                        ? 'bg-slate-800 border-slate-700/50 text-purple-400' 
+                        : 'bg-slate-100 border-slate-200 text-purple-600'
                     }`}>
                       {svc.icon}
                     </div>
@@ -454,6 +467,7 @@ function App() {
                             className={`font-bold tracking-tight ${
                               isActive ? "text-purple-600 dark:text-purple-400" : isDarkMode ? "text-slate-300" : "text-slate-700"
                             }`}
+                            style={{ fontFamily: "'Outfit', sans-serif" }}
                           >
                             {proj.title}
                           </Typography>
@@ -596,10 +610,10 @@ function App() {
             
             <div className="flex flex-col items-center md:items-start gap-2">
               <div className="flex items-center gap-2">
-                <span className="w-6 h-6 rounded-lg bg-purple-600 flex items-center justify-center text-white font-black text-xs tracking-tighter">
+                <span className="w-6 h-6 rounded-lg bg-purple-600 flex items-center justify-center text-white font-black text-xs tracking-tighter" style={{ fontFamily: "'Outfit', sans-serif" }}>
                   AK
                 </span>
-                <Typography className={`font-extrabold ${isDarkMode ? 'text-white' : 'text-slate-900'}`} variant="body1">
+                <Typography className={`font-extrabold ${isDarkMode ? 'text-white' : 'text-slate-900'}`} variant="body1" style={{ fontFamily: "'Outfit', sans-serif" }}>
                   Aldi Kurniawan<span className="text-purple-600">.</span>
                 </Typography>
               </div>
@@ -610,7 +624,7 @@ function App() {
 
             {/* Glowing social icons */}
             <div className="flex flex-col items-center md:items-end gap-3">
-              <Typography className="font-bold text-xs text-slate-400 dark:text-slate-500 tracking-wider uppercase">
+              <Typography className="font-bold text-xs text-slate-400 dark:text-slate-500 tracking-wider uppercase" style={{ fontFamily: "'Outfit', sans-serif" }}>
                 Connect To Me
               </Typography>
               <div className="flex items-center gap-4">

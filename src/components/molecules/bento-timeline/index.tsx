@@ -1,7 +1,9 @@
 /* eslint-disable no-undef */
 import { Button, Chip, Typography } from "@mui/material";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import BuildIcon from "@mui/icons-material/Build";
 import React from "react";
+import SchoolIcon from "@mui/icons-material/School";
 import id from "constan/id.json";
 
 interface BentoTimelineProps {
@@ -239,10 +241,10 @@ export default function BentoTimeline({ isDarkMode }: BentoTimelineProps) {
 
           <div>
             <div className="flex items-center justify-between mb-4">
-              <div className={`p-2.5 rounded-xl border border-solid text-xl ${
+              <div className={`p-2.5 rounded-xl border border-solid flex items-center justify-center ${
                 isDarkMode ? "bg-slate-800/80 border-slate-700/40 text-purple-400" : "bg-slate-100 border-slate-200 text-purple-600"
               }`}>
-                🎓
+                <SchoolIcon className="w-5 h-5" />
               </div>
               <Chip 
                 label="EDUCATION" 
@@ -264,7 +266,7 @@ export default function BentoTimeline({ isDarkMode }: BentoTimelineProps) {
             <div className="flex flex-col gap-4">
               {id.education.map((edu: any, index: number) => (
                 <div key={index} className="flex flex-col gap-0.5">
-                  <Typography className={`text-xs font-bold ${isDarkMode ? "text-slate-300" : "text-slate-800"}`}>
+                  <Typography className={`text-xs font-bold ${isDarkMode ? "text-slate-300" : "text-slate-800"}`} style={{ fontFamily: "'Outfit', sans-serif" }}>
                     {edu.institution}
                   </Typography>
                   <Typography className={`text-[11px] font-semibold ${isDarkMode ? "text-purple-400" : "text-purple-600"}`}>
@@ -297,10 +299,10 @@ export default function BentoTimeline({ isDarkMode }: BentoTimelineProps) {
 
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-6 pb-4 border-b border-solid border-x-0 border-t-0 border-slate-100 dark:border-slate-800/60">
             <div className="flex items-center gap-3">
-              <div className={`p-2.5 rounded-xl border border-solid text-xl ${
+              <div className={`p-2.5 rounded-xl border border-solid flex items-center justify-center ${
                 isDarkMode ? "bg-slate-800/80 border-slate-700/40 text-cyan-400" : "bg-slate-100 border-slate-200 text-cyan-600"
               }`}>
-                🛠️
+                <BuildIcon className="w-5 h-5" />
               </div>
               <div>
                 <Typography 
@@ -328,7 +330,7 @@ export default function BentoTimeline({ isDarkMode }: BentoTimelineProps) {
             {id.previousTechnical.map((item: any, index: number) => (
               <div key={index} className="flex flex-col gap-1">
                 <div className="flex items-center justify-between">
-                  <Typography className={`text-xs font-bold ${isDarkMode ? "text-slate-200" : "text-slate-800"}`}>
+                  <Typography className={`text-xs font-bold ${isDarkMode ? "text-slate-200" : "text-slate-800"}`} style={{ fontFamily: "'Outfit', sans-serif" }}>
                     {item.role}
                   </Typography>
                   <span className={`text-[10px] font-bold ${isDarkMode ? "text-cyan-400" : "text-cyan-600"}`}>
