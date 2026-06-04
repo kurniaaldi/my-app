@@ -134,6 +134,18 @@ function App() {
 
   const projects = [
     {
+      image: "./images/heron_wms.png",
+      title: "Heron WMS (Paragon)",
+      thumb: (
+        <div className="w-10 h-10 flex items-center justify-center bg-gradient-to-br from-purple-600 to-indigo-600 text-white font-extrabold text-xs rounded-xl shadow-inner select-none">
+          HR
+        </div>
+      ),
+      desc: "Warehouse Management System (WMS) internal untuk PT. Paragon Technology and Innovation. Mengelola manajemen stok, instant delivery routing, order tracking, inbound/outbound fulfillment, dan dashboard analytics pergudangan secara real-time.",
+      link: "https://heron.paragon.co.id",
+      stack: ["React.js", "Material UI", "Redux Toolkit", "RESTful APIs", "Lighthouse"],
+    },
+    {
       image: "./images/stats.png",
       title: "Stats.enablr.id",
       thumb: <STATS className="w-10 h-10 object-contain text-purple-600 dark:text-purple-400" />,

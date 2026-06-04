@@ -1,14 +1,15 @@
 {
-  "profile": "Saya seorang Frontend Developer dengan hasrat yang kuat untuk mempelajari hal-hal baru. Saya akrab dengan ReactJs, React Native, Node.Js dan ExpressJs. Saya mulai belajar bahasa pemrograman dari php dan saat ini menggunakan javascript sebagai bahasa utama saya.",
+  "profile": "Results-driven Software Engineer with over 5+ years of professional experience specializing in building responsive, scalable, and high-performance web and mobile applications. Expert in modern JavaScript/TypeScript ecosystems, including React.js, Next.js, and React Native, with a strong foundation in backend integration (Node.js, Spring Boot) and cross-platform mobile development (Flutter).",
   "iDoNow": {
     "title": "Sekarang Sibuk Apa?",
     "child": [
       {
         "button": "Kunjungin",
-        "img": "./paramatech.jpeg",
-        "link": "https://paramatech.id/",
-        "role": "Menjadi Seorang Software Engineer",
-        "desc": "Menjadi Seorang Software Engineer memberikan tantangan baru buat saya, membuat saya lebih disiplin, teliti dan terstruktur dalam bekerja, menganalisa sebuah sistem yang akan saya kerjaan sebelum membuat codingan agar program yang saya buat lebih efisien."
+        "img": "",
+        "link": "https://www.paragon-innovation.com/",
+        "company": "PT. Paragon Technology and Innovation",
+        "role": "Frontend Engineer",
+        "desc": "Spearhead the development and optimization of core web application features using React.js, improving frontend performance and user engagement. Collaborate closely with UI/UX designers to translate high-fidelity prototypes into clean, responsive, and reusable component libraries. Partner with Backend Engineers and QA teams within an Agile/Scrum framework to ensure seamless API integration and zero-defect deployments. Architect scalable frontend code structures and implement comprehensive testing using Jest."
       }
     ]
   },
@@ -17,27 +18,72 @@
     "child": [
       {
         "button": "Kunjungin",
-        "img": "./enablr.svg",
-        "link": "https://enablr.id/",
-        "role": "Menjadi Seorang Frontend Developer",
-        "desc": "Menjadi sebuah hal yang patut dibanggakan pada tahun 2021 bisa bergabung bersama Enablr.id, serta ikut berkontribusi dan tumbuh berkembang dengan perusahaan yang sedang berkembang dengan cepat. aku disini berperang sebagai seorang frontend developer yang mana tugasnya mengembangkan tampilan visual atau user interface pada halaman website."
+        "img": "./paramatech.jpeg",
+        "link": "https://paramatech.id/",
+        "company": "PT. Citta Param Guna (Paramatech)",
+        "role": "Software Engineer",
+        "desc": "Developed and maintained diverse software products utilizing React.js, Next.js for web systems, and Flutter for cross-platform mobile apps. Engineered and optimized backend services using Java Spring Boot, ensuring high availability and secure data transmission. Contributed to scalable system architecture design, reducing codebase technical debt and accelerating feature release cycles by 15%."
       },
       {
         "button": "Kunjungin",
-        "link": "https://microgen.id/",
+        "img": "./enablr.svg",
+        "link": "https://enablr.id/",
+        "company": "PT. Sinergi Digital Pusaka (Enablr)",
+        "role": "Frontend Developer",
+        "desc": "Built and delivered modern, production-ready UI components across web and mobile platforms using React.js and React Native. Integrated RESTful endpoints and successfully streamlined application state management for enhanced data rendering speed. Actively participated in sprint planning and design sprints, rapidly implementing client feedback to improve overall software workflow."
+      },
+      {
+        "button": "Kunjungin",
         "img": "./mejik.jpg",
-        "role": "Menjadi Seorang Fullstack Developer",
-        "desc": "Pada tahun pertama saya menjadi seorang developer, bergabung dengan perusahaan yang mengembangkan aplikasi tools developer menjadi pengalaman berharga untuk didapatkan. berperan sebagai fullstack developer dalam mengembangan tools developer seperti microgen.id membuat saya mendapatkan banyak pengalaman menjadi seorang developer."
+        "link": "https://microgen.id/",
+        "company": "PT. Mejik Utama Sugiharta (Microgen)",
+        "role": "Fullstack Developer",
+        "desc": "Managed end-to-end development cycles for web applications (Next.js) and mobile applications (React Native). Implemented GraphQL-based data fetching to maximize network efficiency and designed highly reusable UI components. Deployed robust databases and application logic, ensuring product stability from initial concept to launch."
       },
       {
         "button": "Kunjungin",
         "img": "./dumbways.svg",
         "link": "https://dumbways.id/",
-        "role": "Menjadi Seorang Fullstack Developer",
-        "desc": "Saya bergabung dengan Dumbways menjadi awal mula penjalanan saya sebagai fullstack developer. berawal mengikuti kegiatan bootcamp hingga bergabung dan membantu mengembangkan website dumbway.id."
+        "company": "DumbWays.id Bootcamp",
+        "role": "Fullstack Developer Student",
+        "desc": "Joined DumbWays bootcamp as the starting point of my journey as a fullstack developer. Intensive training focused on React.js, Express.js, React Native, and MySQL database management, and built project outputs."
       }
     ]
   },
+  "previousTechnical": [
+    {
+      "role": "Network Engineer",
+      "company": "Infrastructure Management",
+      "period": "2019 - 2020",
+      "desc": "Managed network infrastructure and troubleshooting activities."
+    },
+    {
+      "role": "Heavy Equipment Assembler",
+      "company": "Industrial Manufacturing",
+      "period": "2018 - 2019",
+      "desc": "Assembled industrial equipment according to technical specifications."
+    },
+    {
+      "role": "QC Inspector",
+      "company": "Automotive Industry",
+      "period": "2014 - 2016",
+      "desc": "Conducted quality inspections and testing procedures."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universitas Mercu Buana",
+      "degree": "Bachelor of Computer Science",
+      "period": "Graduated 2020",
+      "desc": "Thesis: Regional Language Learning and Translator Mobile Application."
+    },
+    {
+      "institution": "DumbWays.id Bootcamp",
+      "degree": "Certified Fullstack JavaScript Developer",
+      "period": "Class of 2020",
+      "desc": "React.js, Express.js, React Native, and MySQL database management."
+    }
+  ],
   "project": "Hal yang menjadi fokus dari saya adalah memiliki aplikasi sendiri yang nantinya akan saya kelola sendiri. saya juga sudah telah menyelesaikan beberapa perkerjaan dari luar dan berbagai jenis skala pekerjaan, mulai dari mengerjakan beberapa fitur saja sampai dengan membuat full satu product utuh dari awal sampai selesai.",
   "hubungi": "Hubungi Saya"
 }
