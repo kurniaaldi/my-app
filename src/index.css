@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700&display=swap');
+
 @tailwind components;
 @tailwind utilities;
 @import-normalize;
@@ -8,53 +10,115 @@ html {
 
 body {
   margin: 0;
-
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 a {
   text-decoration: none;
 }
 
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-} */
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: transparent;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #98a2b3;
+  background: #4b5563;
   opacity: 0.5;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #0a3437;
+  background: #7c3aed;
 }
 
 .filter-gray {
   filter: grayscale(1);
+  opacity: 0.6;
+  transition: all 0.3s ease;
 }
 
 .filter-gray:hover {
-  transition: 0.9s;
   filter: grayscale(0);
+  opacity: 1;
 }
 
+/* Premium Glow Transitions */
+.glow-border-violet {
+  position: relative;
+  border-radius: 16px;
+  background: rgba(15, 23, 42, 0.4);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(124, 58, 237, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glow-border-violet:hover {
+  border-color: rgba(124, 58, 237, 0.5);
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.25), inset 0 0 10px rgba(124, 58, 237, 0.05);
+}
+
+.glow-border-cyan {
+  position: relative;
+  border-radius: 16px;
+  background: rgba(15, 23, 42, 0.4);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(6, 182, 212, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glow-border-cyan:hover {
+  border-color: rgba(6, 182, 212, 0.5);
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.25), inset 0 0 10px rgba(6, 182, 212, 0.05);
+}
+
+/* Custom button hover glow */
+.btn-glow-violet {
+  box-shadow: 0 0 10px rgba(124, 58, 237, 0.3);
+  transition: all 0.3s ease;
+}
+.btn-glow-violet:hover {
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.6);
+  transform: translateY(-2px);
+}
+
+/* Light mode specific definitions if needed */
+.light-mode-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s ease;
+}
+
+.light-mode-card:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+  transform: translateY(-2px);
+}
+
+/* Base style resets since preflight: false */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+}
+
+/* keen slider adjustment */
 [class^="number-slide"],
 [class*=" number-slide"] {
-  background: grey;
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,18 +129,53 @@ a {
   max-height: 100vh;
 }
 
-.number-slide1 {
-  background: #fff;
-}
-
-.thumbnail .keen-slider__slide {
-  font-size: 30px;
-  margin-top: 10px;
-  height: 100px;
-}
 .thumbnail .keen-slider__slide {
   cursor: pointer;
+  transition: all 0.3s ease;
 }
+
 .thumbnail .keen-slider__slide.active {
-  border: 2px dashed black;
+  border: 2px solid #7c3aed;
+  box-shadow: 0 0 10px rgba(124, 58, 237, 0.5);
+}
+
+/* Entrance and Scroll animations */
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up-fade {
+  animation: slideUpFade 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0; /* Default state for JS intersection loader or immediate load */
+}
+
+/* For elements loading immediately */
+.animate-load {
+  animation: slideUpFade 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+
+@keyframes pulseAmbient {
+  0%, 100% {
+    opacity: 0.15;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(1.1);
+  }
+}
+
+.animate-pulse-ambient {
+  animation: pulseAmbient 8s ease-in-out infinite;
 }
